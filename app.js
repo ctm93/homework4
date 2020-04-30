@@ -25,6 +25,10 @@ app.get("/page4", function(req, res){
 res.render('page4');
 });
 
+app.get("/page5", function(req, res){
+res.render('page5');
+});
+
 app.get("*", function(req,res){
     res.send("Page Not Found");
     res.render("error");
